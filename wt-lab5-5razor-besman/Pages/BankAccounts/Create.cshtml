@@ -1,0 +1,55 @@
+@page
+@model wt_lab5_5razor_besman.Pages.BankAccounts.CreateModel
+@{
+    ViewData["Title"] = "Добавление счёта";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="card shadow-sm rounded-4">
+                <div class="card-body">
+                    <h2 class="mb-4">Добавление счёта</h2>
+                    
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="Account.Owner" class="form-label">Владелец</label>
+                            <input asp-for="Account.Owner" class="form-control" placeholder="например, Иванов И.И." />
+                            <span asp-validation-for="Account.Owner" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Account.AccountNumber" class="form-label">Номер счёта</label>
+                            <input asp-for="Account.AccountNumber" class="form-control" placeholder="BY00 0000 0000 0000" />
+                            <span asp-validation-for="Account.AccountNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Account.Balance" class="form-label">Баланс</label>
+                            <input asp-for="Account.Balance" class="form-control" />
+                            <span asp-validation-for="Account.Balance" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Account.Currency" class="form-label">Валюта</label>
+                            <input asp-for="Account.Currency" class="form-control" />
+                            <span asp-validation-for="Account.Currency" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input asp-for="Account.IsActive" class="form-check-input" />
+                            <label asp-for="Account.IsActive" class="form-check-label">Активен</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                        <a asp-page="/BankAccounts/Index" class="btn btn-secondary">Назад</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

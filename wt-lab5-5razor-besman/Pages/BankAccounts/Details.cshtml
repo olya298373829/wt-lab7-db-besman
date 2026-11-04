@@ -1,0 +1,35 @@
+@page
+@model wt_lab5_5razor_besman.Pages.BankAccounts.DetailsModel
+@{
+    ViewData["Title"] = "Подробнее о счёте";
+}
+
+<div class="container py-4">
+    <div class="card shadow-sm rounded-4">
+        <div class="card-body">
+            <h2 class="mb-4">Счёт № @Model.Account.Id</h2>
+            <hr />
+            
+            <p><strong>Владелец:</strong> @Model.Account.Owner</p>
+            <p><strong>Номер счёта:</strong> @Model.Account.AccountNumber</p>
+            <p><strong>Баланс:</strong> @Model.Account.Balance.ToString("F2") @Model.Account.Currency</p>
+            
+            <p>
+                <strong>Статус:</strong>
+                @if (Model.Account.IsActive)
+                {
+                    <span class="badge bg-success">Активен</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">Заблокирован</span>
+                }
+            </p>
+
+            <div class="mt-4">
+                <a asp-page="/BankAccounts/Index" class="btn btn-secondary">Назад к списку</a>
+                <a asp-page="/BankAccounts/Edit" asp-route-id="@Model.Account.Id" class="btn btn-warning">Редактировать</a>
+            </div>
+        </div>
+    </div>
+</div>
