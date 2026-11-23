@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WNnMBIW70UIa1Qgqdbkm3DVBxmFJJbpkl5m3iJ4bE98=",
+  "Source": "wt-lab7-7postgres-efcore-besman",
+  "BasePath": "_content/wt-lab7-7postgres-efcore-besman",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
