@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wt-lab7-7postgres-efcore-besman")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+347e6589b1fb3cf80746e5fd61a6dd1ecd41df1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33942a2e8f64ab48f96b64dddd163bb05c6a044a")]
 [assembly: System.Reflection.AssemblyProductAttribute("wt-lab7-7postgres-efcore-besman")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wt-lab7-7postgres-efcore-besman")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
